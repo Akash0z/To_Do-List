@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  /* Dark space base */
+  background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #000000);                
+  background-size: 400% 400%;
+  /* Animation to move the colors */
+  animation: dazzleGradient 15s ease infinite;                
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;               
+  
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+@keyframes dazzleGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.input-text {
+    margin-top: 60px;
+    height: 50px;
+    width: 350px;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #000000); 
+    animation: dazzleGradient 15s ease infinite;
+    border: none;
+    color: white;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.input-text::placeholder {
+    font-size: 15px;
+    font-style: italic;
+}
+
+.js-button {
+    margin-left: 20px;
+    height: 49px;
+    margin-top: 61.5px;
+    width: 49px;
+    border-radius: 6px;
+    background: linear-gradient(-45deg, rgb(12, 91, 12), rgb(15, 134, 15), rgb(98, 217, 98), rgb(177, 236, 177)); 
+}
+
+.generated-text {
+  height: 50px;
+  width: 350px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, yellow, rgb(188, 188, 60), rgb(110, 110, 22), rgb(26, 25, 25)); 
+  animation: dazzleGradient 15s ease infinite;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-style: italic;
+  display: flex;              /* enables flexbox */
+  align-items: center;        /* vertical centering */
+  justify-content: center;    /* horizontal centering */
+  
+}
+
+.generated-button {
+  margin-left: 20px;
+  height: 49px;
+  width: 49px;
+  border-radius: 6px;
+  background: linear-gradient(-45deg, rgb(12, 91, 12), rgb(15, 134, 15), rgb(98, 217, 98), rgb(177, 236, 177)); 
+}
+
+.output-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
